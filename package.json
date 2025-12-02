@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "inngest:dev": "inngest dev -u",
-    "inngest:prod": "inngest deploy",
-    "postinstall": "prisma generate"
+    "inngest:prod": "inngest deploy"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.9.10",
