@@ -60,6 +60,10 @@ export async function getIndustryInsights() {
 
   if (!user) throw new Error("User not found");
 
+  if (!user.industry) {
+    throw new Error("User industry is not set");
+  }
+
   // If no insights exist, generate them
   if (!user.industryInsight) {
     const insights = await generateAIInsights(user.industry);

@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "inngest:dev": "inngest dev -u",
-    "inngest:prod": "inngest deploy"
+    "inngest:prod": "inngest deploy",
+    "postinstall": "prisma generative"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.9.10",

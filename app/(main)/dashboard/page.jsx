@@ -6,11 +6,11 @@ import Layout from "./_components/layout";
 
 const IndustryInsightsPage = async () => {
     const { isOnboarded } = await getUserOnboardingStatus();
-    const insights = await getIndustryInsights();
 
     if (!isOnboarded) {
         redirect("/onboarding");
     }
+    const insights = await getIndustryInsights();
 
     return (
         <Layout>
